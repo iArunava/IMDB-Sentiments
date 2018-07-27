@@ -43,9 +43,6 @@ def load_imdb_dataset(path):
     return train_texts, train_labels, test_texts, test_labels
 
 
-
-
-
 def main():
     load_imdb_dataset(path)
 
