@@ -1,8 +1,6 @@
 import os
 import numpy as np
 
-path = './'
-
 def shuffle(X, y):
     perm = np.random.permutation(len(X))
     X = X[perm]
@@ -41,10 +39,3 @@ def load_imdb_dataset(path):
 
     # Return the dataset
     return train_texts, train_labels, test_texts, test_labels
-
-
-def main():
-    load_imdb_dataset(path)
-
-if __name__ == '__main__':
-    main()
