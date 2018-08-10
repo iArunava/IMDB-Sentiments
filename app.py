@@ -1,5 +1,7 @@
 from tkinter import *
+from predict import *
 
+tfidf_vect, selector = get_ready()
 
 root = Tk()
 root.geometry("460x460")
@@ -12,6 +14,8 @@ text = Text(root)
 text.pack()
 
 def predict_btn_clicked():
+    ttX = text.get('1.0', 'end');
+    prediction = predict(ttX, tfidf_vect, selector)
     senti.set('sdfsd')
 
 Button(root, text='Predict Sentiment', command=predict_btn_clicked).pack()
