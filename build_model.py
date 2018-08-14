@@ -1,3 +1,10 @@
+import numpy as np
+import tensorflow as tf
+
+from tensorflow.python.keras import models
+from tensorflow.python.keras.layers import Dense
+from tensorflow.python.keras.layers import Dropout
+
 def get_last_layer_units_and_activation(num_classes):
     if num_classes == 2:
         activation = 'sigmoid'
