@@ -34,6 +34,17 @@ python3 app.py
 
 Start putting your own sentiments!
 
+
+--
+
+Aditionally, to build the model, call `init.py` 
+
+```
+python3 init.py
+```
+
+Note: `init.py` is not tested, if results in a stacktrace, kindly open a issue, I'll look into it.
+
 ## License
 
 The code in this repo is distributed under the MIT License.<br/>
